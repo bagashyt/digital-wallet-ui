@@ -1,6 +1,6 @@
 # digital_wallet
 
-Digital wallet UI from [figma](https://figma.com/community/file/1035919542567047557%E2%80%A6) 
+Digital wallet UI from [figma](https://www.figma.com/community/file/1035919542567047557) 
 
 ## Getting Started
 
