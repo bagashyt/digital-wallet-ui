@@ -21,7 +21,7 @@ class MenuScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height: 28.0,
+                height: 12.0,
               ),
 
               ///Search Bar
