@@ -2,6 +2,7 @@ import 'package:digital_wallet/constant/constant.dart';
 import 'package:digital_wallet/model/other_menu.dart';
 import 'package:digital_wallet/model/shortcut_menu.dart';
 import 'package:digital_wallet/widget/custom_appbar.dart';
+import 'package:digital_wallet/widget/custom_searchbar.dart';
 import 'package:digital_wallet/widget/menu/item_menu_shortcut.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class MenuScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kBodyColor,
       appBar: const CustomAppBar(
+        color: kBodyColor,
         icon: Icons.arrow_back,
         title: 'Menu',
       ),
@@ -26,23 +28,12 @@ class MenuScreen extends StatelessWidget {
 
               ///Search Bar
               Container(
-                margin: const EdgeInsets.symmetric(horizontal: 32.0),
-                child: const TextField(
-                  decoration: InputDecoration(
-                      isCollapsed: true,
-                      contentPadding: EdgeInsets.symmetric(
-                          horizontal: 25.0, vertical: 17.0),
-                      suffixIcon: Icon(
-                        Icons.search,
-                        color: Color(0XFF2C3A4B),
-                      ),
-                      border: OutlineInputBorder(
-                          borderSide: BorderSide.none,
-                          borderRadius: BorderRadius.all(Radius.circular(15))),
-                      hintText: 'Search',
-                      hintStyle: TextStyle(color: Colors.black),
-                      filled: true,
-                      fillColor: Color(0XFFE9E9F2)),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 32.0,
+                ),
+                child: const CustomSearchBar(
+                  colorFill: Color(0XFFE9E9F2),
+                  colorBorder: Color(0XFFE9E9F2),
                 ),
               ),
               const SizedBox(
