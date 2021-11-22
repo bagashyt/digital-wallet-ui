@@ -12,6 +12,7 @@ class SendMoneyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: CustomAppBar(
         color: Colors.white,
         icon: Icons.arrow_back,
@@ -73,7 +74,11 @@ class SendMoneyScreen extends StatelessWidget {
               flex: 5,
               child: Numpad(),
             ),
-            Expanded(flex: 2, child: SlideButton())
+            const Expanded(
+                flex: 2,
+                child: SlideButton(
+                  labelText: 'SWIPE TO SEND',
+                ))
           ],
         ),
       ),

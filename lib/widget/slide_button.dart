@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:slider_button/slider_button.dart';
 
-class SlideButton extends StatefulWidget {
-  const SlideButton({Key? key}) : super(key: key);
+class SlideButton extends StatelessWidget {
+  final String labelText;
+  const SlideButton({Key? key, required this.labelText}) : super(key: key);
 
-  @override
-  State<SlideButton> createState() => _SlideButtonState();
-}
-
-class _SlideButtonState extends State<SlideButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
