@@ -10,7 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       home: SendMoneyScreen(),
+=======
+      home: HomePage(),
+>>>>>>> 81be6bce419765b8ed174f26cfb019d4fdb9ac63
     );
   }
 }
