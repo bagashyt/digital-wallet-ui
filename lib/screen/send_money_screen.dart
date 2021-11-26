@@ -1,5 +1,6 @@
 import 'package:digital_wallet/constant/constant.dart';
 import 'package:digital_wallet/model/recent_contact.dart';
+import 'package:digital_wallet/widget/card_profile.dart';
 import 'package:digital_wallet/widget/custom_appbar.dart';
 import 'package:digital_wallet/widget/item_contact.dart';
 import 'package:digital_wallet/widget/numpad.dart';
@@ -24,52 +25,25 @@ class SendMoneyScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-              child: SizedBox(
-                height: 58.0,
-              ),
-            ),
-            Expanded(
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 30.0),
-                height: 80,
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.all(Radius.circular(15))),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Expanded(child: Image.asset(recentContactList[0].image)),
-                    Expanded(
-                      flex: 3,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(recentContactList[0].name),
-                          Text(recentContactList[0].accountBank),
-                        ],
-                      ),
-                    ),
-                  ],
+              flex: 2,
+              child: Center(
+                child: CardProfile(
+                  image: recentContactList[0].image,
+                  name: recentContactList[0].name,
+                  value: recentContactList[0].accountBank,
+                  widget: const Icon(Icons.expand_more),
                 ),
               ),
             ),
             Expanded(
-              child: SizedBox(
-                height: 45,
+              flex: 2,
+              child: Center(
+                child: Text(
+                  '150.000',
+                  style: TextStyle(fontSize: 50),
+                ),
               ),
             ),
-            Expanded(
-              child: Text(
-                '150.000',
-                style: TextStyle(fontSize: 50),
-              ),
-            ),
-            // Expanded(
-            //   child: SizedBox(
-            //     height: 26.0,
-            //   ),
-            // ),
             Expanded(
               flex: 5,
               child: Numpad(),
