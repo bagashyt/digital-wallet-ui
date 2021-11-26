@@ -37,7 +37,7 @@ class ItemElectricBill extends StatelessWidget {
           padding: const EdgeInsets.only(left: 60),
           child: Divider(
             height: 3,
-            color: kBodyColor,
+            color: Colors.black26,
           ),
         )
       ],

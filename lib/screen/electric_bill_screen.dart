@@ -71,13 +71,22 @@ class ElectricBillScreen extends StatelessWidget {
                       title: 'Name',
                       value: 'Samantha',
                     ),
+                    SizedBox(
+                      height: 30,
+                    ),
                     ItemElectricBill(
                       title: 'Customer ID',
                       value: '0098 7485 1298',
                     ),
+                    SizedBox(
+                      height: 30,
+                    ),
                     ItemElectricBill(
                       title: 'Month',
                       value: 'September 2020',
+                    ),
+                    SizedBox(
+                      height: 30,
                     ),
                     Spacer(),
                     Container(
