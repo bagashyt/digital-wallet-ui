@@ -21,7 +21,7 @@ class ItemElectricBill extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title),
+                Text(title, style: fontPoppin.copyWith(fontSize: 12)),
                 SizedBox(
                   height: 5.0,
                 ),
