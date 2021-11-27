@@ -29,7 +29,7 @@ class ElectricBillScreen extends StatelessWidget {
                       style: fontPoppin.copyWith(
                           fontSize: 40, fontWeight: FontWeight.w400),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Text('Detail')
@@ -37,7 +37,7 @@ class ElectricBillScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
+            const Expanded(
               child: SizedBox(
                 height: 110.0,
               ),
