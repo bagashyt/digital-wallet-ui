@@ -28,6 +28,7 @@ class SendMoneyScreen extends StatelessWidget {
               flex: 2,
               child: Center(
                 child: CardProfile(
+                  color: kBodyColor,
                   image: recentContactList[0].image,
                   name: recentContactList[0].name,
                   value: recentContactList[0].accountBank,

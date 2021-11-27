@@ -6,6 +6,7 @@ class CardProfile extends StatelessWidget {
   final String name;
   final String value;
   late Widget widget;
+  final Color color;
 
   CardProfile({
     Key? key,
@@ -13,6 +14,7 @@ class CardProfile extends StatelessWidget {
     required this.value,
     required this.image,
     this.widget = const SizedBox(),
+    required this.color,
   }) : super(key: key);
 
   @override
@@ -20,9 +22,8 @@ class CardProfile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 30.0),
       height: 80,
-      decoration: const BoxDecoration(
-          color: kBodyColor,
-          borderRadius: BorderRadius.all(Radius.circular(15))),
+      decoration: BoxDecoration(
+          color: color, borderRadius: BorderRadius.all(Radius.circular(15))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
