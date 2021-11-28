@@ -49,7 +49,7 @@ class SendMoneyScreen extends StatelessWidget {
               flex: 5,
               child: Numpad(),
             ),
-            const Expanded(
+            Expanded(
                 flex: 2,
                 child: SlideButton(
                   labelText: 'SWIPE TO SEND',

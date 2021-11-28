@@ -3,12 +3,20 @@ import 'package:slider_button/slider_button.dart';
 
 class SlideButton extends StatelessWidget {
   final String labelText;
-  const SlideButton({Key? key, required this.labelText}) : super(key: key);
+  late double marginHorizontal;
+  late double marginVertical;
+  SlideButton(
+      {Key? key,
+      required this.labelText,
+      this.marginHorizontal = 30,
+      this.marginVertical = 30})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      margin: EdgeInsets.symmetric(
+          horizontal: marginHorizontal, vertical: marginVertical),
       height: 65,
       width: double.infinity,
       child: SliderButton(
