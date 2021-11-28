@@ -20,7 +20,7 @@ class CardProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 30.0),
+      margin: const EdgeInsets.symmetric(vertical: 5.0),
       height: 80,
       decoration: BoxDecoration(
           color: color, borderRadius: BorderRadius.all(Radius.circular(15))),

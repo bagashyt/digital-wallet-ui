@@ -1,4 +1,5 @@
 import 'package:digital_wallet/constant/constant.dart';
+import 'package:digital_wallet/widget/common_button.dart';
 import 'package:digital_wallet/widget/custom_appbar.dart';
 import 'package:digital_wallet/widget/item_electric_bill.dart';
 import 'package:flutter/material.dart';
@@ -90,23 +91,12 @@ class ElectricBillScreen extends StatelessWidget {
                         title: 'Month',
                         value: 'September 2020',
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
-                      Spacer(),
-                      Container(
-                        width: MediaQuery.of(context).size.width,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Padding(
-                            padding: const EdgeInsets.all(19.0),
-                            child: Text('CONTINUE'),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                              primary: Color(0xff525298),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(25))),
-                        ),
+                      const Spacer(),
+                      const CommonButton(
+                        title: 'CONTINUE',
                       ),
                     ],
                   ),
